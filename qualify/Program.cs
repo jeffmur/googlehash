@@ -11,7 +11,10 @@ namespace hashCodeBooks
     }
     class Library
     {
-        
+        Book[] setBooks;
+        int SignUpDays;
+        int NumberOfScanable;
+
     }
     class Book
     {
