@@ -6,19 +6,54 @@ namespace hashCodeBooks
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
         }
     }
+
     class Library
     {
-        Book[] setBooks;
-        int SignUpDays;
-        int NumberOfScanable;
+        Book[] setBooks; //Books
+        int signUpDays;
+        int numberOfScannable;
 
+        Library(Book[] setBooks, int SignUpDays, int numberOfScannable)
+        {
+            this.setBooks = setBooks;
+            this.signUpDays = SignUpDays;
+            this.numberOfScannable = numberOfScannable;
+        }
+               
+        Book[] getBook()
+        {
+            return setBooks;
+        }
+        int getSignUpDays()
+        {
+            return signUpDays;
+        }
+        int getNumberOfScannable()
+        {
+            return numberOfScannable;
+        }
     }
+
     class Book
     {
-        int ID;
-        int score;
+        
+        int bookID;
+        int bookScore;
+        Book(int bookID, int score)
+        {
+            this.bookID = bookID;
+            this.bookScore = score;
+        }
+        int getBookID()
+        {
+            return bookID;
+        }
+        int bookScore()
+        {
+            return bookScore;
+        }
     }
 }
